@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - wanghuaduo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个比较随性的娃子,看关于web前端 记录下一些关于css的了解 正在学习中
+一、css的认识css：层叠样式表，负责页面的样式早期是由标签的属性来决定标签的样式，缺点是，导致浏览器比较麻烦，对写代码的人人来说比较难维,"> 
+    <meta name="author" content="jq sleep later"> 
+    <link rel="alternative" href="atom.xml" title="wanghuaduo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/3.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">wanghuaduo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://wanghuaduo.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>四月 04, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>看关于web前端 记录下一些关于css的了解 正在学习中</p>
+<h2 id="一、css的认识"><a href="#一、css的认识" class="headerlink" title="一、css的认识"></a><strong>一、css的认识</strong></h2><p>css：层叠样式表，负责页面的样式<br>早期是由标签的属性来决定标签的样式，缺点是，导致浏览器比较麻烦，对写代码的人人来说比较难维护。<br>用法<br><strong>1.内联样式:</strong><br><code>&lt;div style=&quot;样式&quot;&gt;&lt;/div&gt;</code><br><strong>2.内部样式</strong>css可以把与外观相关的属性全部合并到样式style里。不需要改很多东西。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;选择器&#123;</span><br><span class="line">样式</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>3. 外部样式</strong>将css和html做了一个分离。html里只放标签，css里面只放样式。通过link标签将它俩建立连接。<img src="https://img-blog.csdnimg.cn/20190403200317487.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190403200340493.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190403200408626.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="二，CSS的语法"><a href="#二，CSS的语法" class="headerlink" title="*二，CSS的语法**"></a>*二，CSS的语法**</h2><p>选择器和声明组成<br><strong>1.选择器</strong>：通过选择器可以找到html的元素，将样式传递给html。</p>
+<p>基本选择器：<br><strong>通配符选择器</strong>：*指所有的html元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">	border： 1px solid black；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>给所有的内容加上外边框</p>
+<p><strong>标签选择器：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	border： 1px solid black；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>所有用div标签的会被加上外边框<br><strong>id选择器</strong> ：以#开头；具有元素唯一性。元素之间的id不能相同。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p id=&quot;txt&quot;&gt;文字&lt;/id&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#txt&#123;</span><br><span class="line">	font-size：60px</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>将 文字 变大<br><strong>class选择器：</strong>.代表class；不具有唯一性。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;txt1 txt2&quot;&gt;p1&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.txt1&#123;</span><br><span class="line">	font-size: 100px;</span><br><span class="line">&#125;</span><br><span class="line">.txt2&#123;</span><br><span class="line">	color: red</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>将p1变大变红<br><img src="https://img-blog.csdnimg.cn/20190403230851855.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190403230915457.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190403230928214.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>2.声明：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	width：属性；</span><br><span class="line">	height:    ;</span><br><span class="line">	background:   ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>3.注释</strong>：<code>/*注释*/</code></p>
+<p><strong>4.颜色：</strong><br>三种方式<br>color: rgb(数字，数字，数字）；rgb色彩模式；R:红色；G:绿色；b：蓝色；颜色由浅到深（0-255)</p>
+<p>直接写名称：red；</p>
+<p>16进制 ： #ff0000；</p>
+<h2 id="三、CSS原理"><a href="#三、CSS原理" class="headerlink" title="三、CSS原理"></a><strong>三、CSS原理</strong></h2><p><strong>优先原则</strong>:后解析的内容会覆盖掉之前解析的内容。<br>1.同一个选择器：从上往下执行<br>2.同一类型的选择器：从上往下执行<br>3.不同类型的选择器：先解析低优先级的在解析高优先级的（div&lt;class&lt;id）最终会生效的是高优先级的。<br>4.内部样式和内部样式合并之后做解析<br>先外部样式后解析内部样式。<br>外：<br><img src="https://img-blog.csdnimg.cn/20190403233624267.png" alt="在这里插入图片描述"><br>内：<img src="https://img-blog.csdnimg.cn/20190403233546744.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>表现出来的：<br><img src="https://img-blog.csdnimg.cn/20190403233650507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>5.内联样式：当外部样式和内部样式解析完的时候才解析内联样式。<br>6.加important的最后执行</p>
+<p><strong>继承原则</strong>：嵌套里面的标签会拥有外部标签的样式。子元素会继承父元素的一些样式。<br>1.跟文字相关的可以被继承，其他的不可以被继承<br>2.块级元素，如果不被设置宽度，则他可以继承最接近的的父级元素的宽；高是由内容决定的。</p>
+<h2 id="四、组合选择器"><a href="#四、组合选择器" class="headerlink" title="四、组合选择器"></a>四、组合选择器</h2><p>把基本选择器通过特殊符号串在一起组成组合选择器。<br>1.分组选择器：<code>div,p,ul</code><br>2.嵌套选择器：空格隔开  嵌套在第一个标签里面的才可以<br>3.子选择器：<code>&gt;        如：div&gt;p;需要div是p的父标签才会生效</code><br>4.相邻的，同级别的选择器：<code>如：div+p  会生效的是跟div平一级p</code></p>
+<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>基本s[属性]</p>
+<p>[属性=值] 完全对应</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title=&quot;dog&quot;&gt;柯基&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p[title=dog]&#123;</span><br><span class="line">	background: red;</span><br><span class="line">	font-size: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>[属性~=值]空格隔开，只要属行中包含dog的都可以，像dog1 就不可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title=&quot;dog two&quot;&gt;柯基&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p[title~=dog]&#123;</span><br><span class="line">	background: red;</span><br><span class="line">	font-size: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>[属性^=值]开始,只要里面包含dog的都可以<br>像dog one可以<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title^=&quot;dog2&quot;&gt;柯基&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p[title^=dog]&#123;</span><br><span class="line">	background: red;</span><br><span class="line">	font-size: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>[属性$=值]结束,以cc结束的才可以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title$=&quot;dog cc&quot;&gt;柯基&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p[title$=cc]&#123;</span><br><span class="line">	background: red;</span><br><span class="line">	font-size: 50px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h2><p>每一个标签会加上俩伪元素<br>开始：before<br>结束：after</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p title=&quot;dog&quot;&gt;柯基&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">p::before &#123;</span><br><span class="line">	content: &quot;before&quot;;</span><br><span class="line">&#125;</span><br><span class="line">p::after &#123;</span><br><span class="line">	content: &quot;after&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20190404220134784.png" alt="在这里插入图片描述"><br>针对块级元素<br>第一个字母：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::first-letter &#123;</span><br><span class="line">	color: blue;</span><br><span class="line">&#125;         对第一个字母做修饰</span><br></pre></td></tr></table></figure></p>
+<p>第一行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::first line &#123;</span><br><span class="line">	color: blue;</span><br><span class="line">&#125;      对第一行做修饰</span><br></pre></td></tr></table></figure></p>
+<h2 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h2><p>对状态做改变</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">	background-img：url（‘图片地址’）；  全部平铺</span><br><span class="line">	background-repeat： repeat-x；    沿着x轴平铺 </span><br><span class="line">	background-repeat： no-repeat；  不平铺</span><br><span class="line">	background-position：100px 100px；   将这一张图片放在离页面x轴100像素，离y轴100px的地方</span><br><span class="line">	background-position：50% 0%；   将图片移动到x轴的一半处，y轴不变</span><br><span class="line">	background-attachment：fixed；     页面滚动，但背景图不动   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上可等于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">	background: color image repeat attachment;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">	font-family: &quot;宋体&quot;,&quot;黑体&quot;；  将文本变为宋体，如果系统内没有宋体将会把文本变黑体</span><br><span class="line">	font-size: &quot;100px&quot;;      设置字体大小</span><br><span class="line">	font-weight：100；     100-900；设置字体粗细</span><br><span class="line">	font-style: italic;       设置字体样式；将字体设置为斜体</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简便写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">font： style weight  size/line-height（字行间的高度）font-family；</span><br></pre></td></tr></table></figure>
+<p>用简便写法的话，必须设置size，family；</p>
+<h2 id="文本"><a href="#文本" class="headerlink" title="文本"></a>文本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">p&#123;</span><br><span class="line">	color：red；  字体的颜色</span><br><span class="line">	</span><br><span class="line">	letter-spacing：10px；    字母之间的距离</span><br><span class="line">	word-spacing: 10px;  字符之间空格的距离</span><br><span class="line">	</span><br><span class="line">	direction： ltr； 将文本从左到右</span><br><span class="line">	text-decoration：line-through； 线从字中间穿过</span><br><span class="line">	overline；线在字的顶端</span><br><span class="line">	underline； 线在字的底端</span><br><span class="line">	</span><br><span class="line">	text-align： left;    将文字左对齐</span><br><span class="line">	right； 文字右对齐</span><br><span class="line">	center；  文字居中</span><br><span class="line">	justify；两端对齐</span><br><span class="line">	width： 250px；</span><br><span class="line">	</span><br><span class="line">	text-indent： 60px；  文字缩进</span><br><span class="line">	</span><br><span class="line">	text-transform： uppercase；全大写</span><br><span class="line">	lowercase;   全小写</span><br><span class="line">	capitalize;  首字母大写</span><br><span class="line">	</span><br><span class="line">	width： 250px； 设置宽度</span><br><span class="line">	white-space: nowrap;   取消换行</span><br><span class="line">	overflow: hidden;     将多余的文字隐藏</span><br><span class="line">	text-overflow:clip;    默认</span><br><span class="line">	text-overflow: ellipsis;   将多余文字转化为省略号</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">img&#123;</span><br><span class="line">	width：200px；   设置图片宽度</span><br><span class="line">	vertical-align： top center bottom；垂直对齐  将文字放在顶上，中间，底部</span><br><span class="line">	float： left；  将文字在左边围着图片</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">a&#123;</span><br><span class="line">	color： red;   文字颜色</span><br><span class="line">&#125;</span><br><span class="line">a：link&#123;</span><br><span class="line">	color: blue;  初始状态</span><br><span class="line">&#125;</span><br><span class="line">a：visited&#123;</span><br><span class="line">	color: yellow;   被访问时候的状态</span><br><span class="line">&#125;</span><br><span class="line">a: hover&#123;</span><br><span class="line">	color: red;   鼠标移动到链接的状态</span><br><span class="line">&#125;</span><br><span class="line">a: active&#123;</span><br><span class="line">	color: green;   点击时候的状态</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="列表："><a href="#列表：" class="headerlink" title="列表："></a>列表：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;ul&gt;</span><br><span class="line">		&lt;li&gt;1&lt;/li&gt;</span><br><span class="line">		&lt;li&gt;2&lt;/li&gt;</span><br><span class="line">	&lt;/ul&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ul&#123;</span><br><span class="line">	list-style-type:    ;</span><br><span class="line">	none   不使用项目符号</span><br><span class="line">	disc   实心圆</span><br><span class="line">	circle   空心圆</span><br><span class="line">	square   实心方块</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ol&#123;</span><br><span class="line">	list-style-type:    ;</span><br><span class="line">	demical:   阿拉伯数字</span><br><span class="line">	lower-alpha:    小写英文字母</span><br><span class="line">	upper-alpha:    大写英文字母</span><br><span class="line">	lower-roman:    小写罗马数字</span><br><span class="line">	upper-roman:    大写罗马</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>加图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">li&#123;</span><br><span class="line">	background-image: url(&quot;图片地址&quot;);</span><br><span class="line">	background-repeat: no-repeat;   不平铺</span><br><span class="line">	 height: 50px;    设置高度</span><br><span class="line">	 padding: 25px； 将图片移动25px</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>里面的元素<br>内容<br>内边距<br>外边距</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci data-cs data-r data-o data-a data-d="false">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
