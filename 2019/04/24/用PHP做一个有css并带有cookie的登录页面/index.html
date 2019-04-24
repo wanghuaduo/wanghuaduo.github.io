@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - wanghuaduo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个比较随性的娃子,一、配置PHP环境要用php做登录页面，所以先要配置好PHP环境。我下载的是phpstudy。phpstudy的下载下载过后进行安装，放到一个无中文的目录（为了减少出错）。都好了后点击启动，如果缺少,"> 
+    <meta name="author" content="jq sleep later"> 
+    <link rel="alternative" href="atom.xml" title="wanghuaduo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/3.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">wanghuaduo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://wanghuaduo.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>四月 24, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="一、配置PHP环境"><a href="#一、配置PHP环境" class="headerlink" title="一、配置PHP环境"></a>一、配置PHP环境</h2><p>要用php做登录页面，所以先要配置好PHP环境。<br>我下载的是phpstudy。<a href="http://phpstudy.php.cn/" target="_blank" rel="noopener">phpstudy的下载</a><img src="/2019/04/24/用PHP做一个有css并带有cookie的登录页面/1.jpg" alt><br>下载过后进行安装，放到一个无中文的目录（为了减少出错）。都好了后点击启动，如果缺少什么软件，系统会告诉你，然后你点进去一步一步安装就好了。当点击启动时会出现两个绿色点点就成功了。</p>
+<h2 id="二、搭建数据库"><a href="#二、搭建数据库" class="headerlink" title="二、搭建数据库"></a>二、搭建数据库</h2><p>在phpstudy中点击mysql管理器，选中phpMyAdmin，进入登录页面默认的账号密码 都是root，选中数据库，新建数据库，然后输入你数据库的名字，一步步创建就好了<a href="https://jingyan.baidu.com/article/295430f1cb398f0c7e0050ea.html" target="_blank" rel="noopener">（参考网址）</a>再选中MySQL-Front进入页面，然后选中数据库，点新建字段，然后再里面新建username和password。mysql中新建用户可以参考<br><a href="https://jingyan.baidu.com/article/a948d651cadd340a2dcd2e88.html" target="_blank" rel="noopener">（参考链接）</a></p>
+<h2 id="三、写出代码"><a href="#三、写出代码" class="headerlink" title="三、写出代码"></a>三、写出代码</h2><p><strong>1.写出登录框的代码</strong></p>
+<p>我是先用html写的文件，然后保存后修改文件后缀。加上&lt;?php?&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt; </span><br><span class="line">&lt;?php</span><br><span class="line">?&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;  </span><br><span class="line">&lt;head&gt;  </span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;  </span><br><span class="line">    &lt;title&gt;Login&lt;/title&gt;  </span><br><span class="line">    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;2.css&quot;/&gt;  </span><br><span class="line">&lt;/head&gt;  </span><br><span class="line">&lt;body&gt;  </span><br><span class="line">    &lt;div id=&quot;login&quot;&gt;  </span><br><span class="line">        &lt;h1&gt;Login&lt;/h1&gt;  </span><br><span class="line">        &lt;form action=&quot;validate_logon.php&quot; method=&quot;post&quot; &gt;  </span><br><span class="line">            &lt;input type=&quot;text&quot; required=&quot;required&quot; placeholder=&quot;用户名&quot; name=&quot;username&quot;&gt;&lt;br&gt;  </span><br><span class="line">            &lt;input type=&quot;password&quot; required=&quot;required&quot; placeholder=&quot;密码&quot; name=&quot;password&quot;&gt;&lt;br&gt;</span><br><span class="line">            &lt;button class=&quot;button&quot; type=&quot;submit&quot;&gt;登录&lt;/button&gt;&lt;br&gt;</span><br><span class="line">            &lt;button class=&quot;button&quot; type=&quot;submit&quot; value=&quot;注册&quot; onclick=&quot;window.location.href=&apos;renew.php&apos;&quot;&gt;注册&lt;/button&gt;&lt;br&gt;</span><br><span class="line">            </span><br><span class="line">        &lt;/form&gt; </span><br><span class="line">    &lt;/div&gt;   </span><br><span class="line">&lt;/body&gt;  </span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>因为要求用css，所以我用css写的样式。<br>有看不懂的语法点请参考我的上面几篇博客。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"> body&#123;    </span><br><span class="line">    background-color: pink;   </span><br><span class="line">&#125;   </span><br><span class="line">#login&#123;   </span><br><span class="line">    position: absolute;   /*边框的位置*/</span><br><span class="line">    top: 50%;   </span><br><span class="line">    left:50%;   </span><br><span class="line">    margin: -150px 0 0 -150px;    /*外边距*/</span><br><span class="line">&#125;   </span><br><span class="line">#login h1&#123;   </span><br><span class="line">    color: blue;        </span><br><span class="line">    text-align: center;   </span><br><span class="line">&#125;   </span><br><span class="line"></span><br><span class="line">input&#123;   </span><br><span class="line">    width: 278px;   </span><br><span class="line">    height: 18px;   </span><br><span class="line">    margin-bottom: 10px;     /*间距*/</span><br><span class="line">    padding: 10px;           /*内边距*/</span><br><span class="line">    color: white;            /*字体颜色*/</span><br><span class="line">    background-color: grey;   /*边框内颜色*/</span><br><span class="line">&#125;   </span><br><span class="line">.button&#123;   </span><br><span class="line">    width: 300px;   </span><br><span class="line">    min-height: 20px;   </span><br><span class="line">    display: block;   </span><br><span class="line">    background-color: purple;      </span><br><span class="line">    color: white;   </span><br><span class="line">    padding: 10px;   </span><br><span class="line">    font-size: 15px;        /*字体的尺寸*/</span><br><span class="line">    line-height: normal;     /*行间距*/</span><br><span class="line">    margin: 0;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>做好后是这个样子。<br><img src="/2019/04/24/用PHP做一个有css并带有cookie的登录页面/2.jpg" alt><br><strong>2.写出登录验证的代码</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">header(&apos;Content-type:text/html;charset=utf-8&apos;);     /*防止乱码*/</span><br><span class="line">$one= mysql_connect(&quot;localhost&quot;,&quot;root&quot;,&quot;root&quot;);        /*链接本地*/</span><br><span class="line">mysql_select_db(&quot;new&quot;,$one);                          /*选取你自己建的数据库*/</span><br><span class="line">$username=$_POST[&apos;username&apos;];                  /*将你登录页面中提交的用户名和密码转到这俩种*/</span><br><span class="line">$password=$_POST[&apos;password&apos;];                /*注意post的大小写*/</span><br><span class="line">$sql=&quot;select * from users where username=&apos;$username&apos; and password=&apos;$password&apos;&quot;;   /*挑选你建的表格中的username和password这两列*/</span><br><span class="line">$result= mysql_query($sql);     /*进行一个mysql查询*/</span><br><span class="line">$flush= mysql_fetch_array($result);     </span><br><span class="line">if(is_array($flush))              /*检测变量是否是一个数组*/</span><br><span class="line">&#123;</span><br><span class="line">        setcookie(&apos;user&apos;,$username,time()+5000);   /*cookie判断*/</span><br><span class="line">        ob_end_clean();        //固定格式</span><br><span class="line">        header(&quot;Location:getinto.php&quot;);          /*降低至转移到getinto.php*/</span><br><span class="line">        exit;</span><br><span class="line">&#125;</span><br><span class="line">else&#123;</span><br><span class="line">    echo &quot;您的用户名或密码输入有误&lt;a href=1.php&gt;请重新登录&lt;/a&gt;&quot;;</span><br><span class="line">&#125;     /*echo相当于输出*/</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>3.写出登录成功后的页面</strong><br>如上面写登录框一样，用css写。<br>我写出的大概是这样的，比较简单。css也是仿照登录框写的，修改了一些。<br><img src="/2019/04/24/用PHP做一个有css并带有cookie的登录页面/3.jpg" alt><br><strong>4.写出注册页面</strong><br>还是像登录页面一样，用css。写好后将文件改后缀为php加上&lt;?php?&gt;.保存在phpstudy文件夹里的www文件里。就OK了。<br>示例如下：<br><img src="/2019/04/24/用PHP做一个有css并带有cookie的登录页面/4.jpg" alt><br><strong>5.接下来用php写出注册验证。</strong><br>就是创建新用户，当用户名重复时创建失败，或者输入的两次密码不正确时创建失败。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php  </span><br><span class="line"></span><br><span class="line">header(&apos;Content-type:text/html;charset=utf-8&apos;);  //防止乱码</span><br><span class="line">$one=mysql_connect(&quot;localhost&quot;,&quot;root&quot;,&quot;root&quot;);  //连接到本地的数据库</span><br><span class="line">mysql_select_db(&quot;new&quot;,$one);    //挑选你的数据库</span><br><span class="line">$username=$_POST[&apos;username&apos;]; </span><br><span class="line">$password=$_POST[&apos;password&apos;]; </span><br><span class="line">$password2=$_POST[&apos;password2&apos;];</span><br><span class="line">if($password!=$password2)</span><br><span class="line">&#123; </span><br><span class="line">    echo&quot;输入的两个密码不一样,请重新输入&lt;a href=&apos;renew.php&apos;&gt;重新输入&lt;/a&gt;&quot;;        </span><br><span class="line">&#125;</span><br><span class="line">else</span><br><span class="line">&#123;  </span><br><span class="line">    $sql=&quot;select*from users where username=&apos;$username&apos;&quot;;</span><br><span class="line">    $check=mysql_query($sql);</span><br><span class="line">    $flush= mysql_fetch_array($check);</span><br><span class="line">    if(is_array($flush))</span><br><span class="line">    &#123;</span><br><span class="line">        echo&quot;用户名重复&lt;a href=&apos;renew.php&apos;&gt;请重新注册&lt;/a&gt;&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123; </span><br><span class="line">        $sql=&quot;insert into users (username,password) values (&apos;$username&apos;,&apos;$password&apos;)&quot;;   /*要给哪些字段插入值。value是插入的值是什么。*/</span><br><span class="line">        $result=mysql_query($sql);</span><br><span class="line">        if(!$result)</span><br><span class="line">        &#123;</span><br><span class="line">            echo&quot;注册不成功&lt;a href=&apos;renew.php&apos;&gt;点击返回&lt;/a&gt;&quot;;</span><br><span class="line">          </span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;                </span><br><span class="line">            echo&quot;注册成功&lt;a href=&apos;1.php&apos;&gt;返回登录&lt;/a&gt;&quot;;</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我写的代码是在别人的帮助下完成的，所以少踩了很多坑。</p>
+<h2 id="四、简单的cookie介绍"><a href="#四、简单的cookie介绍" class="headerlink" title="四、简单的cookie介绍"></a>四、简单的cookie介绍</h2><p>Cookie就是服务器暂存放在你计算机上的一笔资料，好让服务器用来辨认你的计算机。当你在浏览网站的时候，Web服务器会先送一小小资料放在你的计算机上，Cookie 会帮你在网站上所打的文字或是一些选择，都记录下来。当下次你再光临同一个网站，Web服务器会先看看有没有它上次留下的Cookie资料，有的话，就会依据Cookie里的内容来判断使用者，送出特定的网页内容给你。<br>内容来自：<br><a href="https://zhidao.baidu.com/question/2966432.html" target="_blank" rel="noopener">https://zhidao.baidu.com/question/2966432.html</a><br>还有就是防止你直接用网站链接不经过查询数据库而直接进入登录成功后的网页。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setcookie(&apos;user&apos;,$username,time()+5000);</span><br></pre></td></tr></table></figure>
+<p>上述代码的意思是：设置一个cookie，提交用户名的资料在时间5000秒后会自动删除</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if(!isset($_COOKIE[&apos;user&apos;]))&#123;</span><br><span class="line">    echo &apos;拒绝解入&lt;a href=&quot;1.php&quot;&gt;返回重新登录&lt;/a&gt;&apos;;</span><br><span class="line">    exit();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>_cookie 则为读出缓存，<br>isset 检查变量是否存在，<br>header 转向到某个页面；<br>exit() 结束；<br>就是如果没有读出缓存，就不能直接进入。</p>
+<h2 id="五、漏洞总结"><a href="#五、漏洞总结" class="headerlink" title="五、漏洞总结"></a>五、漏洞总结</h2>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci data-cs data-r data-o data-a data-d="false">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
