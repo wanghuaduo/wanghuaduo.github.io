@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> - wanghuaduo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个比较随性的娃子,二、变量变量是临时（只有你在程序的运行过程中才存在）存储的容器
+1.变量的声明：在PHP中使用变量之前是不需要声明的，直接用。赋值操作符：=变量名：$$变量名=数据1$
+2.变量的规则：变量严格区分,"> 
+    <meta name="author" content="jq sleep later"> 
+    <link rel="alternative" href="atom.xml" title="wanghuaduo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/3.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">wanghuaduo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://wanghuaduo.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle"></h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title"></h1>
+        <div class="stuff">
+            <span>六月 03, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <h2 id="二、变量"><a href="#二、变量" class="headerlink" title="二、变量"></a>二、变量</h2><p>变量是临时（只有你在程序的运行过程中才存在）存储的容器</p>
+<p>1.变量的声明：<br><strong>在PHP中使用变量之前是不需要声明的，直接用。</strong><br>赋值操作符：=<br>变量名：$<br>$变量名=数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$</span><br></pre></td></tr></table></figure></p>
+<p>2.变量的规则：<br><strong>变量严格区分大小写</strong><br>上面怎样定义下面怎样引用，否则会报错<br><strong>变量是由字母和下划线开头的</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$asd   $_shi233  都可以</span><br></pre></td></tr></table></figure>
+<p><strong>不能以数字开头</strong></p>
+<p><strong>注意：</strong><br>最好不要用PHP的关键字做为变量名称，因为在其他的编程语言中是不被允许的。<img src="https://img-blog.csdnimg.cn/20190506194518505.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p>3.变量的释放：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unset($变量名)；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$name=1;</span><br><span class="line">unset($name);  销毁$name 变量</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p>4.可变变量</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$abc=<span class="string">'test'</span>;  <span class="comment">//定义一个变量里面是test</span></span><br><span class="line">$$abc=<span class="number">123</span>;  <span class="comment">//$test=123</span></span><br><span class="line"><span class="keyword">echo</span> $test;  <span class="comment">//输出变量$test</span></span><br></pre></td></tr></table></figure>
+<p>5.变量引用赋值</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="number">1000</span>;</span><br><span class="line">$b=&amp;$a;    <span class="comment">//相当于给$a起了一个别名，操作其中任意一个，都会影响到另外一个变量。</span></span><br><span class="line">$b=<span class="number">20</span>;     <span class="comment">//给变量b赋值</span></span><br><span class="line"><span class="keyword">echo</span> $b;  <span class="comment">//输出变量$b的内容</span></span><br></pre></td></tr></table></figure>
+<h2 id="三、变量类型"><a href="#三、变量类型" class="headerlink" title="三、变量类型"></a>三、变量类型</h2><p>是指保存在变量里的数据类型，具有相同类型的才能彼此操作<br>php是弱类型的语言，不需要声明类型，可以直接用。</p>
+<p>1.变量类型简介：<br><strong>bool布尔型：</strong>表达了真假</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">echo</span> $a;  <span class="comment">//输出1；   fasle为0；</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="keyword">true</span>;</span><br><span class="line">var_dump($a);  <span class="comment">//可以输入变量类型</span></span><br></pre></td></tr></table></figure>
+<p><strong>int 整型：</strong>往变量里存整数<br><strong>float 浮点型：</strong> 往变量中存小数</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="number">1.1</span>;</span><br><span class="line">var_dump($a);  <span class="comment">//可以输入变量类型</span></span><br></pre></td></tr></table></figure>
+<p><strong>string 字符串</strong>：放一系列的字符。  注意在单引号括起来的字符串中不能在包括单引号，  如果药房<strong>单引号</strong>的话加上\转义</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="string">'test......'</span>;</span><br><span class="line">var_dump($a);  <span class="comment">//可以输入变量类型</span></span><br></pre></td></tr></table></figure>
+<p> 如果要用单引号的话加上\转义<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="string">'test......\'abc'</span>;</span><br><span class="line">var_dump($a);  <span class="comment">//可以输入变量类型</span></span><br></pre></td></tr></table></figure></p>
+<p>定义简单的字符串可以用单引号，但是单引号里面的变量不可以被解析。</p>
+<p><strong>双引号</strong>：里面的变量名可以被解析<br>双引号不能再有双引号</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="string">'test....'</span>;</span><br><span class="line">$b=<span class="string">"te&#123;$b&#125;st...."</span>;</span><br><span class="line">var_dump($a);</span><br><span class="line"><span class="keyword">echo</span> $a;</span><br></pre></td></tr></table></figure>
+<p><strong>定界符：</strong><br>里面加单引号加双引号都可以。不能用<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="string">&lt;&lt;&lt;aaa</span></span><br><span class="line"><span class="string">111222333</span></span><br><span class="line">aaa;</span><br><span class="line">var_dump($a);</span><br></pre></td></tr></table></figure></p>
+<p><strong>array 数组<br>object 对象<br>resource 资源</strong><br><strong>null：</strong><br>表示空<br>将变量赋给null；声明的变量尚未被赋值；被unset销毁的变量</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="keyword">null</span>;</span><br><span class="line">var_dump($a);</span><br></pre></td></tr></table></figure>
+<p>2.变量类型相互转化<br>转变并不会改变转变变量本身的类型<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=<span class="string">'王小红'</span>;</span><br><span class="line">$b=(int)$a;</span><br><span class="line">var_dump($b);</span><br></pre></td></tr></table></figure></p>
+<h2 id="四、常量"><a href="#四、常量" class="headerlink" title="四、常量"></a>四、常量</h2><p>常量是临时（只有你在程序的运行过程中才存在）存储的容器<br>常量一旦被定义 就不能<br>1.定义：define（‘常量名称’，常量值）<br>          define（”常量名称”，常量值）<br>2.命名规则：和变量一样，参考上面变量的命名规则。<br>3.常量和变量区别：<br>（1）常量前面没有美元符号$<br>（2）常量只能用define定义，不能通过赋值语句<br>（3）常量不用理会变量范围的规则在任何地方定义和使用<br>（4）常量一旦被定义就不能被重新定义或者取消定义（变量可以用unset）<br>（5）常量的值只能是bool，int，float，string类型。<br>4.预定义常量  常用“__”表示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">echo __LINE__;</span><br></pre></td></tr></table></figure>
+<p>代码所在的位置不同，所表现出来的值也不同<br><strong>预定义常量是不区分大小写的</strong><br><strong>自己定义的常量是严格区分大小写的</strong><br>最好都写成大写；<br>几个常见的魔术常量（预定义常量）：<br><img src="https://img-blog.csdnimg.cn/20190512194800218.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ0NTgxNDU0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h2><p>运算符是对操作数进行执行某种运算的符号<br>1.算数运算符<br>（1）<strong>+</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a=1;</span><br><span class="line">$b=2;</span><br><span class="line">echo $a+$b;</span><br></pre></td></tr></table></figure>
+<p>（2）<strong>-</strong>:<br>第一个意思：减号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=2;</span><br><span class="line">$c=$a-$b;</span><br><span class="line">echo $c;</span><br></pre></td></tr></table></figure>
+<p>第二个意思：当只有一个操作数的时候，表示取反</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=-$a;</span><br><span class="line">echo $b;   //-1</span><br><span class="line">echo $a;   //1      取反不会影响本身的值</span><br></pre></td></tr></table></figure>
+<p>（3）*   乘号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=2;</span><br><span class="line">$c=$a*$b;</span><br></pre></td></tr></table></figure>
+<p>（4）/  除号     除数不能为0；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=2;</span><br><span class="line">$c=$a/$b；</span><br></pre></td></tr></table></figure>
+<p>（5）% 取模  取余数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=2;</span><br><span class="line">$c=$a%$b;</span><br><span class="line">echo $c;</span><br></pre></td></tr></table></figure>
+<p>（6）  ++  自增<br>前++      会先自增 再返回自增后的值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">echo ++$a;   // 2</span><br></pre></td></tr></table></figure>
+<p>后++  会先返回变量的值 在执行自增</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">echo $a++;   //echo $a; $a=$a+1;   1</span><br><span class="line">echo $a;     //  2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=$a++;   //$a=$b; $a=$a+1;   </span><br><span class="line">echo $b;     //  1</span><br></pre></td></tr></table></figure>
+<p>（7）– 自减<br>同++一样<br>前–  就是先减一在输出<br>后–<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=$a--;  </span><br><span class="line">echo $b; //0</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">echo $a--;  //echo $a; $a=$a-1;  1</span><br><span class="line">echo &apos;&lt;br /&gt;&apos;;   //换行</span><br><span class="line">echo $a; //0</span><br></pre></td></tr></table></figure>
+<p>2.字符串运算符<br>.  链接符<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=王;</span><br><span class="line">$b=hua;</span><br><span class="line">echo $a.$b;</span><br></pre></td></tr></table></figure></p>
+<p>3.赋值运算符<br>二元运算符  把左边的赋给右边的  左边必须是变量 右边可以是表达式</p>
+<pre><code>+=       //$a=$a+$b
+-=      //$a=$a-$b
+*=      //
+/=
+%=
+.=
+</code></pre><p>4.比较运算符  得到的结果是布尔类型true false<br>PHP中规定使用echo输出布尔类型的时候  是true就输出1 是false就什么都不输出  使用需要输出布尔类型值得时候 用var_dump（）更好<br>（1）==   比较值是否相等<br>如果相等就是true 不相等就是false</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=1;</span><br><span class="line">var_dump($a==$b);</span><br></pre></td></tr></table></figure>
+<p>（2）===   全等  值要相等 类型也要相等<br>如果两个比较的不是同样的类型  PHP会自动将不一样的转化成一样的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=&apos;1&apos;;</span><br><span class="line">var_dump((int)$b);  //强制将字符串型转换为int型</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/20190514194409700.png" alt="在这里插入图片描述"><br>所以</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$a=1;</span><br><span class="line">$b=&apos;1&apos;;</span><br><span class="line">var_dump($a==$b);  //输出true</span><br><span class="line">var_dump($a===$b);  //输出false</span><br></pre></td></tr></table></figure>
+<p>（3）！=     左不等于右<br>（4）&lt;  &gt;   大于 小于<br>（5）！==  不全等 判断两边的操作数是不是不全等  值需要相同  类型也需要相等<br>（6）&lt; 小于<br>（7）&gt;  大于<br>（8）&lt;= 小于等于<br>（9）&gt;= 大于等于<br>5.逻辑运算符<br>参与逻辑运算的表达式值是布尔类型的值如果不是布尔类型的值会被自动转换成布尔类型的值再参加运算<br>运算结果是布尔类型的值<br>（1）and &amp;&amp;<br>左右两边的表达式的值都为true时 运算的结果就为true   其中只要有一个false  运算结果就为false</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$a=true;</span><br><span class="line">$b=false;</span><br><span class="line">var_dump($a &amp;&amp; $b);  //输出false</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci data-cs data-r data-o data-a data-d="false">查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
