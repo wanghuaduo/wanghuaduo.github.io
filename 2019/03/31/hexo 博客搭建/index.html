@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang class="loading">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>hexo 博客搭建 - wanghuaduo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个比较随性的娃子,简单的hexo博客搭建。新手新手。继续修改中。
+node.js安装搜索http://nodejs.org/进入官网，下载LTS版。然后安装，一直next就行了打开cmd界面然后输入node -v查看,"> 
+    <meta name="author" content="jq sleep later"> 
+    <link rel="alternative" href="atom.xml" title="wanghuaduo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/3.png"> 
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/diaspora.css">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+</head>
+</html>
+<body class="loading">
+    <span id="config-title" style="display:none">wanghuaduo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;" data-url="http://wanghuaduo.github.io"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">hexo 博客搭建</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class="main">
+        <h1 class="title">hexo 博客搭建</h1>
+        <div class="stuff">
+            <span>三月 31, 2019</span>
+            
+
+        </div>
+        <div class="content markdown">
+            <p>简单的hexo博客搭建。<br>新手新手。继续修改中。</p>
+<h1 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h1><p>搜索<a href="http://nodejs.org/进入官网，下载LTS版。然后安装，一直next就行了" target="_blank" rel="noopener">http://nodejs.org/进入官网，下载LTS版。然后安装，一直next就行了</a><br>打开cmd界面然后输入node -v查看下载的node.js的版本<br><img src="/2019/03/31/hexo 博客搭建/1.jpg" alt></p>
+<h2 id="安装git，并配置好git"><a href="#安装git，并配置好git" class="headerlink" title="安装git，并配置好git"></a>安装git，并配置好git</h2><hr>
+<h2 id="title-hexo博客搭建"><a href="#title-hexo博客搭建" class="headerlink" title="title: hexo博客搭建"></a>title: hexo博客搭建</h2><h2 id="注册github账户和新建仓库"><a href="#注册github账户和新建仓库" class="headerlink" title="注册github账户和新建仓库"></a>注册github账户和新建仓库</h2><p><img src="/2019/03/31/hexo 博客搭建/2.jpg" alt></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>并在合适的位置创一个名叫blog的文件夹，用来装生成的文件夹<br>打开cmd。<br><img src="/2019/03/31/hexo 博客搭建/3.jpg" alt><br>输入npm install hexo -g<br><img src="/2019/03/31/hexo 博客搭建/4.jpg" alt><br>然后就开始安装hexo</p>
+<p>安装成功后可以输入hexo -v检查是否安装成功，顺带查看安装的版本<br><img src="/2019/03/31/hexo 博客搭建/5.jpg" alt><br>然后输入hexo init。意思是初始化hexo<br><img src="/2019/03/31/hexo 博客搭建/6.jpg" alt><br>接着输入npm install(npm是node里面的一个工具）</p>
+<p>然后输入hexo -g</p>
+<p>再接着输入 hexo s（表示开始启动）</p>
+<p>会出现一个 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>点开后会出现<br><img src="/2019/03/31/hexo 博客搭建/7.jpg" alt><br>但到现在还没有做完</p>
+<h2 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h2><p>将里面的账户信息变成自己的信息</p>
+<p>输入cd /.ssh</p>
+<p>输入ssh-keygen-t rsa-C”你的邮箱”</p>
+<p>回车<br>最后在c盘生成俩文件夹</p>
+<p>登录github</p>
+<p>点击Settings<br><img src="/2019/03/31/hexo 博客搭建/8.jpg" alt><br>新建一个SSH and GPG Keys<br><img src="/2019/03/31/hexo 博客搭建/9.jpg" alt><br>将C盘里的下面的一个文件用记事本打开<br>将里面的内容复制到key里<br><img src="/2019/03/31/hexo 博客搭建/10.jpg" alt></p>
+<h2 id="修改-config文件"><a href="#修改-config文件" class="headerlink" title="修改-config文件"></a>修改-config文件</h2><p>打开blog文件夹 然后打开-config文件 </p>
+<p>修改添加里面的内容类似下面<br><img src="/2019/03/31/hexo 博客搭建/11.jpg" alt></p>
+<h2 id="最后推到远端"><a href="#最后推到远端" class="headerlink" title="最后推到远端"></a>最后推到远端</h2><p>要安装  在命令框中输入<br><img src="/2019/03/31/hexo 博客搭建/12.jpg" alt><br>然后hexo clean</p>
+<p>在输入hexo g</p>
+<p>在hexo d</p>
+<p>在中间过程中要输入你的名户名及密码</p>
+<p>等待  然后会有你的地址生成 在浏览器中打开你的地址就可以看到你所搭建的东西了</p>
+<h2 id="主题的更改"><a href="#主题的更改" class="headerlink" title="主题的更改"></a>主题的更改</h2><p>分为两个步骤</p>
+<p>先到官网<a href="https://hexo.io/themes/里面挑一个喜欢的主题" target="_blank" rel="noopener">https://hexo.io/themes/里面挑一个喜欢的主题</a><br>然后点击那个主题 进入他的仓库<br><img src="/2019/03/31/hexo 博客搭建/13.jpg" alt><br>在搜索栏里搜索那个名字<br><img src="/2019/03/31/hexo 博客搭建/14.jpg" alt><br>找到类似这样的一个博客 点进去<br><img src="/2019/03/31/hexo 博客搭建/15.jpg" alt><br>找到clone链接复制下来（蓝色字体是链接）<br><img src="/2019/03/31/hexo 博客搭建/16.jpg" alt><br>接着用cmd clone这个主题到你的themes里<br><img src="/2019/03/31/hexo 博客搭建/17.jpg" alt><br>如果在克隆过程中出现了这样的问题<br><img src="/2019/03/31/hexo 博客搭建/18.jpg" alt><br>这个错误是因为项目太久，tag资源文件太大<br>可以将和http:// 改成git://试试<br>如果成功后<br>修改-config文件里修改theme 然后保存<br><img src="/2019/03/31/hexo 博客搭建/19.jpg" alt><br>接着用git bash here打开<br>先输入hexo clean 进行初始化<br><img src="/2019/03/31/hexo 博客搭建/20.jpg" alt><br>然后继续输入hexo g<br><img src="/2019/03/31/hexo 博客搭建/21.jpg" alt><br>然后输入hexo d<br><img src="/2019/03/31/hexo 博客搭建/22.jpg" alt><br>过会就可以看到主题变了</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src>
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title="0" data-url="http://link.hhtjim.com/163/5146554.mp3"></li>
+                    
+                        <li title="1" data-url="http://link.hhtjim.com/qq/001faIUs4M2zna.mp3"></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id="gitalk-container" class="comment link" data-ae="false" data-ci data-cs data-r data-o data-a data-d="false">查看评论</div>
+
+
+    </div>
+    
+        <div class="side">
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#node-js安装"><span class="toc-number">1.</span> <span class="toc-text">node.js安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git，并配置好git"><span class="toc-number">1.1.</span> <span class="toc-text">安装git，并配置好git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#title-hexo博客搭建"><span class="toc-number">1.2.</span> <span class="toc-text">title: hexo博客搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册github账户和新建仓库"><span class="toc-number">1.3.</span> <span class="toc-text">注册github账户和新建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装hexo"><span class="toc-number">1.4.</span> <span class="toc-text">安装hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置github"><span class="toc-number">1.5.</span> <span class="toc-text">配置github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改-config文件"><span class="toc-number">1.6.</span> <span class="toc-text">修改-config文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最后推到远端"><span class="toc-number">1.7.</span> <span class="toc-text">最后推到远端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题的更改"><span class="toc-number">1.8.</span> <span class="toc-text">主题的更改</span></a></li></ol></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/diaspora.js"></script>
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</html>
